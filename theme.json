@@ -1,6 +1,6 @@
 {
-    "id": "nodebb-theme-quickstart",
-    "name": "My Theme Name",
-    "description": "Enter a description here",
+    "id": "DarkShy Theme",
+    "name": "DarkShy",
+    "description": "Тема для SlainsForum",
     "url": "https://github.com/nodebb/nodebb-theme-quickstart"
 }
