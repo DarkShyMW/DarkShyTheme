@@ -1,18 +1,32 @@
 {
-	"id": "nodebb-theme-quickstart",
+	"id": "nodebb-theme-material",
 	"library": "./lib/theme.js",
 	"hooks": [
 		{
-			"hook": "filter:widgets.getAreas", "method": "defineWidgetAreas"
+			"hook": "static:app.load", "method": "init"
+		},
+		{
+			"hook": "filter:admin.header.build", "method": "addAdminNavigation"
+		},
+		{
+			"hook": "filter:config.get", "method": "getConfig"
+		},
+		{
+			"hook": "filter:user.customSettings", "method": "customSettings"
+		},
+		{
+			"hook": "action:user.saveSettings", "method": "saveSettings"
+		},
+		{
+			"hook": "filter:user.getSettings", "method": "getSettings"
 		}
 	],
 	"scripts": [
-		"public/client.js",
-		"../nodebb-theme-persona/public/persona.js",
-		"../nodebb-theme-persona/public/modules/autohidingnavbar.min.js",
-		"../nodebb-theme-persona/public/modules/quickreply.js"
+		"lib/material.js",
+		"lib/vendor/waves.min.js"
 	],
-	"modules": {
-		"pulling.js": "node_modules/pulling/build/pulling-drawer.js"
-	}
+	"acpScripts": [
+		"lib/admin.js"
+	],
+	"templates": "./templates"
 }
