@@ -1,10 +1,10 @@
 {
-  "name": "nodebb-theme-material",
+  "name": "nodebb-theme-slainsdayz",
   "version": "2.13.1",
   "nbbpm": {
     "compatibility": "^1.17.0"
   },
-  "description": "Material Design theme for NodeBB",
+  "description": "Theme by DarkShy for SlainsDayZ",
   "main": "theme.less",
   "repository": {
     "type": "git",
@@ -15,13 +15,15 @@
     "material",
     "material design",
     "theme",
-    "themes"
+    "themes",
+    "darkshy",
+    "slainsdayz"
   ],
   "author": {
-    "name": "pichalite",
-    "email": "pichalite.com@gmail.com"
+    "name": "DarkShy",
+    "email": "ponyfrost.mc@gmail.com"
   },
   "bugs": {
-    "url": "https://github.com/pichalite/nodebb-theme-material/issues"
+    "url": "https://github.com/DarkShyMW/DarkShyTheme/issues"
   }
 }
